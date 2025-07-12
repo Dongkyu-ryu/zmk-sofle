@@ -52,12 +52,7 @@
         CLALDEL: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&kt LEFT_CONTROL &kp LEFT_ALT &kp DELETE>,
-                <&macro_pause_for_release>,
-                <&TOGLEOFF LEFT_CONTROL &TOGLEOFF LEFT_ALT &TOGLEOFF DELETE>,
-                <&macro_release>;
-
+            bindings = <&sk LEFT_CONTROL &sk LEFT_ALT &kp DELETE>;
             label = "NEW_MACRO";
         };
     };

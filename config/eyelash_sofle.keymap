@@ -32,9 +32,9 @@
         tap-ms = <100>;
     };
 
-    new_behavior: new_behavior {
+    TOGLEOFF: TOGLEOFF {
         compatible = "zmk,behavior-key-toggle";
-        label = "NEW_BEHAVIOR";
+        label = "TOGLEOFF";
         #binding-cells = <1>;
         toggle-mode = "off";
     };
@@ -55,6 +55,7 @@
             bindings =
                 <&macro_tap>,
                 <&kp LEFT_CONTROL &kp LEFT_ALT &kp DELETE>,
+                <&macro_tap_time 50>,
                 <&macro_release>;
 
             label = "NEW_MACRO";

@@ -32,6 +32,13 @@
         tap-ms = <100>;
     };
 
+    new_behavior: new_behavior {
+        compatible = "zmk,behavior-key-toggle";
+        label = "NEW_BEHAVIOR";
+        #binding-cells = <1>;
+        toggle-mode = "off";
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -45,7 +52,12 @@
         CLALDEL: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_CONTROL &kp LEFT_ALT &kp DELETE>;
+            bindings =
+                <&macro_press>,
+                <&kt LEFT_CONTROL &kt LEFT_ALT &kt DELETE>,
+                <&macro_release>,
+                <&kt LEFT_CONTROL &kt LEFT_ALT &kt DELETE>;
+
             label = "NEW_MACRO";
         };
     };

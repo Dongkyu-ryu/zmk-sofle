@@ -57,7 +57,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - '&new_macro'
+  - '&CLALDEL'
   - $$mdi:keyboard-space$$
   - LAYER0
   - $$mdi:keyboard-space$$
